@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/ppt/css/upload.css" type="text/css"/>
+</head>
+<body>
+    <form method="post" action="/ppt" enctype="multipart/form-data">
+        <div>
+            <h1>Contact Form :</h1>
+            <% for(var i =1; i<=ppt_num; i++){ %>
+                <label>
+                    <span>文件</span><input type="file" name="pptFile<%= i %>"/>
+                </label>
+            <% } %>
+            <label>
+                <input class="submit" type="submit" value="上传" />
+            </label>
+        </div>
+    </form>
+</body>
+</html>

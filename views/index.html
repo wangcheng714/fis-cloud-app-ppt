@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>F.I.S</title>
+    <meta name="description" content="写份报告吧，屌工逆袭高工">
+    <meta name="author" content="zhangyunlong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" type="text/css" href="/static/ppt/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="/static/ppt/css/theme/night.css">
+    <link rel="stylesheet" type="text/css" href="/static/ppt/lib/css/zenburn.css">
+    <!-- 打印成PDF -->
+    <link rel="stylesheet" type="text/css" href="/static/ppt/css/print/pdf.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="/static/ppt/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <% if(sections.length>0){ %>
+                <% for(var i=0; i<sections.length; i++){ %>
+                    <section>
+                        <%- sections[i] %>
+                    </section>
+                <% } %>
+            <% }else{ %>
+                no ppt !!!!
+            <% } %>
+        </div>
+    </div>
+    <script src="/static/ppt/lib/js/head.min.js"></script>
+    <script src="/static/ppt/js/reveal.js"></script>
+    <script src="/static/ppt/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "fis-cloud-app-ppt",
+  "version": "0.0.0",
+  "description": "fis-cloud-app-ppt",
+  "main": "fis-cloud-app-ppt.js",
+  "dependencies": {
+      "ejs": "*",
+      "marked" : "0.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis",
+    "fis-cloud",
+    "fis-clou-app-ppt"
+  ],
+  "author": "fis-team",
+  "license": "BSD"
+}
